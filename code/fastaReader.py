@@ -25,7 +25,7 @@ with open(file_path_in, 'r') as fasta_file:
         fasta_dict[current_sequence_id] = ''.join(current_sequence)
 
 
-def split_string(input_string, max_length):
+def split(input_string, max_length):
     # Initialize an empty list to store the divided strings
     result = []
 
