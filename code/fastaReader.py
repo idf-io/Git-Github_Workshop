@@ -1,5 +1,4 @@
 file_path_in = "../data/nonexistent.fasta"
-file_path_out = "../out/modified.fasta"
 
 # Initiate variables
 fasta_dict = {}
@@ -25,7 +24,7 @@ with open(file_path_in, 'r') as fasta_file:
         fasta_dict[current_sequence_id] = ''.join(current_sequence)
 
 
-def split_string(input_string, max_length):
+def split_text(input_string, max_length):
     # Initialize an empty list to store the divided strings
     result = []
 
@@ -43,3 +42,4 @@ with open(file_path_out, 'w') as mod_fasta:
 
     for key, value in fasta_dict.items():
         mod_fasta.write(key + '\n')
+        #Done
