@@ -1,6 +1,7 @@
-file_path_in = "../data/example.fasta"
+file_path_in = "../data/nonexistent.fasta"
 file_path_out = "../out/modified.fasta"
 
+# Initiate variables
 fasta_dict = {}
 current_sequence_id = None
 current_sequence = []
@@ -42,4 +43,3 @@ with open(file_path_out, 'w') as mod_fasta:
 
     for key, value in fasta_dict.items():
         mod_fasta.write(key + '\n')
-        mod_fasta.writelines(split_string(value, 71))
